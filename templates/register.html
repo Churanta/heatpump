@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register User</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/authentication_style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<img class="wave2" src="/static/img/wave.png">
+	<div class="container">
+		
+		<div class="login-content">
+			<form class="form2" action="{{ url_for('register') }}" method="post">
+				<img src="/static/img/avatar3.svg">
+				<h2 class="title">Register User</h2>
+                <br>
+
+
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		
+           		   		<input type="text" class="input" placeholder="Enter Name" required id="name" name="name">
+           		   </div>
+           		</div>
+
+
+                   <div class="input-div one">
+                    <div class="i">
+                            <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="div">
+                            
+                            <input type="text" class="input" required placeholder="Enter Email id" id="email" name="email">
+                    </div>
+                 </div>
+
+
+                    <!-- Password -->
+
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	
+           		    	<input type="password" class="input" required id="pass" placeholder="Enter Password" id="password" name="password" >
+            	   </div>
+            	</div>
+
+            	
+            	<input type="submit"  class="btn" value="Login" id="create">
+				<div > 
+				<a href="login" class="register"><u>Existing User? Login</u></a></div>
+            </form>
+        </div>
+        <div class="img2">
+            <img src="/static/img/bg5.svg">
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

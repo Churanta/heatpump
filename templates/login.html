@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login User</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/authentication_style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<img class="wave" src="/static/img/wave.png">
+	<div class="container">
+		<div class="img">
+			<img src="/static/img/bg3.svg">
+		</div>
+		<div class="login-content">
+			<form action="{{ url_for('login') }}" method="post">
+				<img src="/static/img/avatar.svg">
+				<h2 class="title">Welcome</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		
+           		   		<input type="text" class="input" placeholder="name" id="name" name="name">
+           		   </div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+					
+					
+           		    	<input type="password" placeholder="Password" class="input" id="password" name="password">
+            	   </div>
+            	</div>
+            	<a href="#">Forgot Password?</a>
+            	<!--- <input type="submit" class="btn" value="Login" > -->
+				<button  class="btn"> Login</button>
+				<div>
+				<a href="register" class="register"><u>New User? Register</u></a>
+			</div>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

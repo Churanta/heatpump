@@ -1,0 +1,91 @@
+<div>{% extends 'sidebar.html' %}</div>
+{% block title %}Device{% endblock%}
+{%block content%}
+
+
+<div class="wrapper2" ><br>
+<div><center>
+    <div class="aligned">
+    <img src="/static/img/mail.svg" class="img">
+    <p class="p1">Notifications...</p></center>
+</div>
+<br><br><br>
+<!----Rows And Columns-->
+<table>
+
+
+  <table id="data" class="table table-striped">
+    <thead>
+      <tr>
+        <th>Device ID</th>
+        <th>Notification Type</th>
+        <th>Comment</th>
+        <th>Time</th>
+        <th>Option</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      {% for lists in items %}
+      <tr>
+        <td>{{lists.Dev_id}}</td>
+        <td>{{lists.not_type}}</td>
+        <td>{{lists.not_comment}}</td>
+        <td>{{lists.not_time}}</td>
+        <td><button type="delete">Delete</button></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+
+   
+  </table>
+
+  
+
+
+
+
+  
+  </table>
+
+
+
+</div>
+</div>
+<style>
+    .p1 {
+        font-family: "Times New Roman", Times, serif;
+        font-size:50px;
+      }
+      
+
+    .img{
+        height:100px   ;
+        display:flex;
+        padding:10px;
+      }
+      .aligned {
+        display: flex;
+        align-items: center;
+    }
+
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 90%;
+      }
+      
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #B8FFE7;
+        
+      }
+
+</style>
+{%endblock%}
+
