@@ -25,16 +25,15 @@
       </tr>
     </thead>
     <tbody>
-
-      {% for lists in items %}
-      <tr>
-        <td>{{lists.Dev_id}}</td>
-        <td>{{lists.not_type}}</td>
-        <td>{{lists.not_comment}}</td>
-        <td>{{lists.not_time}}</td>
-        <td><button type="delete">Delete</button></td>
-      </tr>
-      {% endfor %}
+        {% for lists in notifications%}
+          <tr>
+            <td>{{lists.Dev_id}}</td>
+            <td>{{lists.not_type}}</td>
+            <td>{{lists.not_comment}}</td>
+            <td>{{lists.not_time}}</td>
+            <td><button type="delete">Delete</button></td>
+          </tr>
+        {% endfor %}
     </tbody>
 
    

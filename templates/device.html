@@ -5,15 +5,17 @@
 
 <div class="wrapper2" >
     
-    {% for lists in items %}
-    <div class="box">
+    {% for lists in device_list %}
+      <div class="box">
         <div><br>
-            <img src="/static/img/device.svg" class="img"></div>
-            <div><br>
-            <span><b style="color:#707070;">{{lists.device_nm}}<b></span><br><br>
-                <span><b style="color:#707070;">{{lists.device_id}}<b></span>
-            </div>
-    </div>{% endfor %}
+          <img src="/static/img/device.svg" class="img">
+        </div>
+        <div><br>
+          <span><b style="color:#707070;">{{lists.device_nm}}<b></span><br><br>
+            <span><b style="color:#707070;">{{lists.device_id}}<b></span>
+        </div>
+      </div>
+    {% endfor %}
     <ul id="menu">
       <li class="menu-item">Action 1</li>
       <li class="menu-item">Action 2</li>
